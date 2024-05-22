@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555;
+}
+body{
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+   /* overflow: hidden;*/
+    justify-content: space-between;
+    
+    
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+    height: 60px;
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+
+}
+li{
+    text-align: center;
+    padding: 14px 12px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.small-text{
+    font-size: 15px;
+
+}
+.menu{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.menu-button:hover{
+background-color: rgba(100, 100, 100, 1);
+cursor: pointer;
+}
+
+.menu-button{
+    width: 15px;
+}
+.search-wrapper{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+form{
+    position: relative;
+    margin-top: 30px;
+}
+input{
+    width: 580px;
+    height: 45px;
+    padding-left: 50px;
+    font-size: 19px;
+    border-radius: 45px;
+    border: 1px solid #d3d3d3;
+   
+}
+input:hover{
+    box-shadow: 0 1px 3px 1px rgba(201, 201, 201, 0.6);
+}
+input:focus{
+    outline: none;
+}
+.search{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    left: 18px;
+}
+.mic{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+}
+.image{
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    left: 540px;
+
+}
+ .mic.title{
+    background-color: black;
+    color: white;
+}
+.buttons{
+    
+    margin: auto;
+    width: 350px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+button{
+    border: 1px solid transparent;
+    padding: 8px 8px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+   
+
+
+}
+button:hover{
+    border: 1px solid #eee;
+    box-shadow: 0 0 2px 1px rgba(189, 189 , 189, 0.5);
+    cursor: pointer;
+    
+}
+.bottom-link{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    font-size: x-small;
+    margin-top: 20px;
+}
+.Kiswahili{
+    color: blue;
+    font-weight:lighter ;
+    
+}
+
+footer{
+    width: 100%;
+    background-color:#f2f2f2 ;
+    font-weight: 350;
+
+}
+.panel{
+    border-bottom: 1px solid #ddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+p{
+    color: grey;
+    padding-left: 13px;
+}
+.leaf{
+    width: 12px;
+}
+
