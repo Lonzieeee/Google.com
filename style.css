@@ -59,7 +59,7 @@ cursor: pointer;
     width: 15px;
 }
 .search-wrapper{
-    height: auto;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
