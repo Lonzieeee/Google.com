@@ -167,7 +167,7 @@ p{
 }
 
 
-* Media Queries */
+                           /* Media Queries */
 @media screen and (max-width: 1024px) {
     .mic {
         right: 40px;
