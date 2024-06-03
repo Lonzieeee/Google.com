@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
-    /*color: #555;*/
+
 }
 body{
     height: 100vh;
@@ -16,19 +16,18 @@ body{
 }
 nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: right;
     padding: 20px 10px;
     height: 60px;
-    min-width:100%;
-    margin: 0 auto;
+    width:100%;
+ align-items: center;
 
 }
 ul{
     display: flex;
     list-style: none;
     align-items: center;
-
+   
 }
 li{
     text-align: center;
@@ -59,15 +58,18 @@ cursor: pointer;
     width: 15px;
 }
 .search-wrapper{
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+    flex: 1;   
 }
 form{
     position: relative;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 input{
     width: 580px;
@@ -180,7 +182,7 @@ p{
 @media screen and (max-width: 768px) {
     .buttons {
         flex-direction: column;
-        width: 100%;
+        /*width: 100%;*/
         gap: 10px;
     }
     .bottom-link {
@@ -203,7 +205,8 @@ p{
         right: 10px;
     }
     .buttons {
-        width: 100%;
+       /* width: 100%;*/
+       flex-direction: column;
     }
     button {
         width: 100%;
