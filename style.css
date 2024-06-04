@@ -16,7 +16,7 @@ body{
 }
 nav{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding: 20px 10px;
     height: 60px;
     width:100%;
@@ -87,21 +87,21 @@ input:focus{
     outline: none;
 }
 .search{
-    width: 20px;
+    width: 15px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 18px;
 }
 .mic{
     width: 20px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 500px;
 }
 .image{
     width: 20px;
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: 540px;
 
 }
@@ -125,8 +125,6 @@ button{
     background-color: #f8f9fa;
     border-radius: 5px;
    
-
-
 }
 button:hover{
     border: 1px solid #eee;
@@ -170,34 +168,51 @@ p{
 
 
                            /* Media Queries */
-@media screen and (max-width: 1024px) {
-    .mic {
-        right: 40px;
-    }
-    .image {
-        right: 10px;
-    }
-}
+                          /*small devices*/
 
 @media screen and (max-width: 768px) {
     .buttons {
         flex-direction: column;
         /*width: 100%;*/
         gap: 10px;
+        margin-left:35% ;
     }
     .bottom-link {
-        flex-direction: column;
+        flex-direction: row; 
         margin-top: 10px;
+        margin-left:35% ;
     }
+    
+    input{
+        width: 500px;
+        margin-left: 35%;
+    }
+  .search-wrapper{
+    width: 90%;
+    padding: 70px;
+  }
+  .third{
+    display: none;
+   }
+   .search{
+    left :100px;
+   }
+.logo{
+    margin-left: 60%;
 }
+footer{
+   width: fit-content;   
+}
+}
+                    /* medium devices */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
     input {
         padding-left: 40px;
     }
-    .search {
-        left: 10px;
-    }
+    /* .search {
+        left: 25px;
+    } */
     .mic {
         right: 35px;
     }
@@ -205,10 +220,17 @@ p{
         right: 10px;
     }
     .buttons {
-       /* width: 100%;*/
-       flex-direction: column;
+    
     }
-    button {
-        width: 100%;
+    .third{
+        display: none;
+       }
+       /* .logo{
+        margin-right: 20%;
+       } */
+       footer{
+        width: fit-content;
+        
+         
+     }
     }
-}
