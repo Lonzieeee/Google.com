@@ -203,6 +203,9 @@ p{
 footer{
    width: fit-content;   
 }
+.small-text , .menu{
+    display: none;
+}
 }
                     /* medium devices */
 
